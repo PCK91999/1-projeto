@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #cdac79;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style: none;
+    font-size: 20px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    /* inserir imagem */
+    background: url(./pexels-burak-kebapci-205505.jpg) no-repeat center center fixed;
+    background-size: cover;
+    /* nao repetir */
+    /* background-repeat: no-repeat;
+    /* centralizar vertical e horizontalmente e fixar */
+    /* background-position: center center fixed; */
+}
+
+header {
+    display: flex;
+    /* border-bottom: 1px solid white; */
+    box-shadow: 3px 3px 20px 1px #cdac79;
+    /* border-bottom: 5px ridge white; */
+    margin-bottom: 45px;
+}
+
+header div img {
+    padding-top: 4px;
+    max-width: 170px;
+}
+
+
+header ul {
+    display: flex;
+    margin: auto 900px;
+}
+
+header ul li {
+    padding: 2px;
+    /* border-bottom: 1px dashed white; */
+    display: flex;
+
+}
+
+header ul li img {
+    padding: 2px;
+    width: 20px;
+    height: 20px;
+
+
+
+}
+
+
+header ul li a {
+    transition: 300ms;
+
+
+}
+
+header ul li a:hover {
+    color: #ebd7b6;
+    text-decoration: underline;
+
+}
+
+main {
+    /* position: absolute; */
+    margin-left: 700px;
+}
+
+.container {
+    text-align: center;
+}
+
+h1{
+    margin-bottom: 15 px;
+}
+
+.container .name h1 {
+    font-size: 50px;
+}
+
+.container .name h5 {
+    font-size: 25px;
+}
+
+#arrow {
+    font-size: 35px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+
+    }
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+
+}
+
+.active {
+    display: block !important;
+
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+
+}
+
+.form {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 30px;
+
+
+
+}
+
+.form input {
+    width: 300px;
+    color: black;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    height: 31px;
+
+}
+
+.form button {
+    color: white;
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #cdac79;
+    border: none;
+    transition: 300ms;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -5px;
+    margin-top: 13px;
+    width: 80px;
+    height: 31px;
+
+
+}
+
+.form button:hover {
+    background-color: rgb(187, 138, 58);
+    color: beige;
+
+
+
+}

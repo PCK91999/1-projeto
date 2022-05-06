@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+        integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesprojeto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <title>Pedro Carvalho</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="./Carvas logo.png " alt="logo Pedro Carvalho">
+        </div>
+        <ul>
+            <li> <img
+                    src="./kisspng-computer-icons-logo-portable-network-graphics-clip-icons-for-free-iconza-circle-social-5b7fe46b4ec817.2080142615351082033227.png"
+                    alt="logo github">
+                <a target="_blank" href="https://github.com/PCK91999">Github</a>
+            </li>
+            <li><img src="./email-icon-email-icon-small-envelope-airmail-transparent-png-838228.png" alt="logo mailto">
+                <a target="_blank" href="mailto:pck91999@gmail.com">Email</a>
+            </li>
+            <li><img src="./pngegg.png" alt="logo whatsapp">
+                <a target="_blank" href="https://wa.me/351910833420">Whatsapp</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Pedro Carvalho</h1>
+                <h5>Web Front End Developer</h5>
+            </div>
+
+            <div id="arrow">
+                <i onclick="displayAbout()" id="animation" class="fa-solid fa-sort-down"></i>
+            </div>
+
+            <div style="display:none" id="about" class="active">
+                <p>Hi my name is Pedro! i'm 23 years old and i live in Almada near Lisbon. I love doing sports and
+                    programming software. Previously i studied electrical engineering and now i am doing the hiring
+                    coders program alongside the best commerce digital company Vtex.
+                 </p>
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>Leave your contact!</p>
+                </div>
+                <form action=" ">
+                    <input type="text" placeholder="Type your best e-mail">
+                    <button>send!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+<script>
+    function displayAbout() {
+        var arrow = document.getElementById('animation');
+        arrow.classList.toogle('rotate')
+        var display = document.getElementById('about');
+        display.classList.toogle('active')
+    }
+</script>
+
+</body>
+
+</html>
